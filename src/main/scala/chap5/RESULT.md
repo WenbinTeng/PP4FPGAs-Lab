@@ -47,6 +47,6 @@ Comparation between HLS code and Chisel code.
 |                  | Latency(ns) | Period(ns) | Interval |
 | ---------------- | ----------- | ---------- | -------- |
 | HLS FFT Baseline | >39800      | 50         | >796     |
-| Chisel FFT v1    | 450         | 50         | 9        |
+| Chisel FFT v1    | 450         | 50         | 1        |
 | Chisel FFT v2    | 450         | 50         | 9        |
 

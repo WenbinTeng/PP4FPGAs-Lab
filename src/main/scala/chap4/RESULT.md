@@ -47,5 +47,5 @@ Comparation between HLS code and Chisel code.
 |                  | Latency(ns) | Period(ns) | Interval |
 | ---------------- | ----------- | ---------- | -------- |
 | HLS DFT Baseline | 3290750     | 50         | 65815    |
-| Chisel DFT v1    | 13250       | 50         | 265      |
+| Chisel DFT v1    | 13300       | 50         | 266      |
 | Chisel DFT v2    | 205100      | 50         | 4102     |
