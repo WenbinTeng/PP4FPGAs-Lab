@@ -16,7 +16,6 @@ class Dft extends Module {
 
     val idle :: work :: Nil = Enum(2)
     val state = RegInit(idle)
-
     switch(state) {
         is(idle) {
             when(io.valid) {
@@ -32,7 +31,6 @@ class Dft extends Module {
 
     val row = RegInit(0.U(32.W))
     val col = RegInit(0.U(32.W))
-
     switch(state) {
         is(idle) {
             row := 0.U
@@ -45,7 +43,6 @@ class Dft extends Module {
             }
         }
     }
-
     switch(state) {
         is(idle) {
             col := 0.U
@@ -100,5 +97,6 @@ class Dft extends Module {
         }
     }
     io.out := res
+
 }
 
