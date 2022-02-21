@@ -12,9 +12,9 @@ class Fft extends Module {
         val in = Input(Vec(dim, new Complex))
         val out = Output(Vec(dim, new Complex))
     })
+
     val idle :: work :: Nil = Enum(2)
     val state = RegInit(idle)
-
     switch(state) {
         is(idle) {
             when(io.valid) {
@@ -29,7 +29,6 @@ class Fft extends Module {
     }
 
     val stage = Reg(UInt(log2Ceil(dim).W))
-
     switch(state) {
         is(idle) {
             stage := 0.U
@@ -38,7 +37,6 @@ class Fft extends Module {
             stage := stage + 1.U
         }
     }
-
     io.ready := stage === log2Ceil(dim).U
 
     def ButterflyUnit(in1: Complex, in2: Complex, wn: Complex): (Complex, Complex) = {
@@ -52,7 +50,6 @@ class Fft extends Module {
     }
 
     val res = Reg(Vec(dim, new Complex))
-
     switch(state) {
         is(idle) {
             res := io.in
@@ -81,9 +78,9 @@ class Fft extends Module {
             }
         }
     }
-
     for (k <- 0 until dim) {
         io.out(k) := res(reverseIndex(k.U))
     }
+
 }
 
