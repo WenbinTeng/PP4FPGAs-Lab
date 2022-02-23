@@ -28,7 +28,7 @@ class Fft extends Module {
         }
     }
 
-    val stage = Reg(UInt(log2Ceil(dim).W))
+    val stage = Reg(UInt(log2Ceil(log2Ceil(dim)).W))
     switch(state) {
         is(idle) {
             stage := 0.U
