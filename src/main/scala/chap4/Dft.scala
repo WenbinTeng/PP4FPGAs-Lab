@@ -36,7 +36,7 @@ class Dft extends Module {
             row := 0.U
         }
         is(work) {
-            when (row === dim.U) {
+            when(row === dim.U) {
                 row := 0.U
             }.elsewhen(col + blk.U >= dim.U) {
                 row := row + 1.U
@@ -48,7 +48,7 @@ class Dft extends Module {
             col := 0.U
         }
         is(work) {
-            when (col + blk.U >= dim.U) {
+            when(col + blk.U >= dim.U) {
                 col := 0.U
             }.otherwise {
                 col := col + blk.U
@@ -75,7 +75,7 @@ class Dft extends Module {
 
     val realAdder = Module(new AdderTree(blk, wid))
     val imagAdder = Module(new AdderTree(blk, wid))
-    when (state === work) {
+    when(state === work) {
         for (k <- 0 until blk) {
             val mul = io.in(col + k.U) * angle(k)
             realAdder.io.x(k) := mul.re.asSInt()
