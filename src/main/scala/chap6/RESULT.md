@@ -1,4 +1,4 @@
-# Chapter 7 -  Sparse Matrix Vector Multiplication
+# Chapter 6 -  Sparse Matrix Vector Multiplication
 
 Comparation between HLS code and Chisel code.
 
