@@ -13,8 +13,8 @@ This is a repository of codes for *Parallel Programming for FPGAs (PP4FPGAs)* la
 | Chapter 3: CORDIC                                | [R3](./src/main/scala/chap3/RESULT.md) | ![1](https://img.shields.io/badge/-Done-brightgreen) |
 | Chapter 4: Discrete Fourier Transform            | [R4](./src/main/scala/chap4/RESULT.md) | ![1](https://img.shields.io/badge/-Done-brightgreen) |
 | Chapter 5: Fast Fourier Transform                | [R5](./src/main/scala/chap5/RESULT.md) | ![1](https://img.shields.io/badge/-Done-brightgreen) |
-| Chapter 6: Sparse Matrix Vector Multiplication   |                                        | ![1](https://img.shields.io/badge/-Todo-lightgrey)   |
-| Chapter 7: Matrix Multiplication                 |                                        | ![1](https://img.shields.io/badge/-Todo-lightgrey)   |
+| Chapter 6: Sparse Matrix Vector Multiplication   | [R6](./src/main/scala/chap6/RESULT.md) | ![1](https://img.shields.io/badge/-Done-brightgreen) |
+| Chapter 7: Matrix Multiplication                 | [R7](./src/main/scala/chap7/RESULT.md) | ![1](https://img.shields.io/badge/-Done-brightgreen) |
 | Chapter 8: Prefix Sum and Histogram              |                                        | ![1](https://img.shields.io/badge/-Todo-lightgrey)   |
 | Chapter 9: Video Systems                         |                                        | ![1](https://img.shields.io/badge/-Todo-lightgrey)   |
 | Chapter 10: Sorting Algorithms                   |                                        | ![1](https://img.shields.io/badge/-Todo-lightgrey)   |
